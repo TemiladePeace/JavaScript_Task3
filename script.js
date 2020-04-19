@@ -19,5 +19,5 @@ function replaceNum( input ) {
     }
     return output;
 }
-console.log(replaceNum(100));
-console.log(replaceNum(30));
+    replaceNum(100);
+    replaceNum(30);
