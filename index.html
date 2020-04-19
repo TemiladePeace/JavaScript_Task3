@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS TASK3</title>
+</head>
+<body>
+    <script>
+      function replaceNum( input ) {
+          let output = [];
+
+          for( let i = 1; i <= input; i++) {
+              let val = "";
+              if( i % 2 == 0){
+                  val = "yu";
+              }
+              if( i % 3 == 0){
+                  val = (val == "") ? "gi" : val + "-gi";
+              }
+              if( i % 5 == 0){
+                  val = (val == "") ? "oh" : val + "-oh";
+              }
+              if(val == ""){
+                  val = i;
+              }
+              output.push(val);
+          }
+          return output;
+      }
+      console.log(replaceNum(100));
+      console.log(replaceNum(30));
+    </script>
+</body>
+</html>
